@@ -53,7 +53,7 @@ steps_by_day <- aggregate(steps ~ date, data1, sum)
 hist(steps_by_day$steps, main = paste("Total Steps Each Day"), col="blue", xlab="Number of Steps")
 ```
 
-![](Untitled_files/figure-markdown_github/unnamed-chunk-2-1.png)
+![](/instructions_fig/unnamed-chunk-2-1.png)
 
 ``` r
 rmean <- mean(steps_by_day$steps)
