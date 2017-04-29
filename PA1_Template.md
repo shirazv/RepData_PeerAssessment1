@@ -75,7 +75,7 @@ steps_by_interval <- aggregate(steps ~ interval, data1, mean)
 plot(steps_by_interval$interval,steps_by_interval$steps, type="l", xlab="Interval", ylab="Number of Steps",main="Average Number of Steps per Day by Interval")
 ```
 
-![](Untitled_files/figure-markdown_github/unnamed-chunk-3-1.png)
+![](/instructions_fig/unnamed-chunk-3-1.png)
 
 ``` r
 max_interval <- steps_by_interval[which.max(steps_by_interval$steps),1]
@@ -110,7 +110,7 @@ hist(steps_by_day$steps, main = paste("Total Steps Each Day"), col="red", xlab="
 legend("topright", c("Imputed", "Non-imputed"), col=c("blue", "red"), lwd=10)
 ```
 
-![](Untitled_files/figure-markdown_github/unnamed-chunk-6-1.png)
+![](/instructions_fig/unnamed-chunk-6-1.png)
 
 Calculate new mean and median for imputed data.
 
@@ -155,4 +155,4 @@ library(lattice)
 xyplot(steps_by_interval_i$steps ~ steps_by_interval_i$interval|steps_by_interval_i$dow, main="Average Steps per Day by Interval",xlab="Interval", ylab="Steps",layout=c(1,2), type="l")
 ```
 
-![](Untitled_files/figure-markdown_github/unnamed-chunk-10-1.png)
+![](/instructions_fig/unnamed-chunk-10-1.png)
